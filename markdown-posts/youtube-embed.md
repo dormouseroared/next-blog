@@ -3,7 +3,7 @@ title: 'Youtube embed'
 date: 'September 28, 2022'
 excerpt: 'How to handle a youtube embed in this nextjs tailwind setup'
 cover_image: '/images/posts/img5.jpg'
-category: 'Tailwind'
+category: 'TailwindCSS'
 author: 'Ferdy'
 author_image: 'https://randomuser.me/api/portraits/men/11.jpg'
 ---
