@@ -15,6 +15,8 @@ Part of a playlist called **JavaScript Nuggets**, by Coding Addict, this particu
 
 This code was used to convert a non-unique list of categories in an array into a unique list.
 
+See also this [**article**](https://dev.to/clairecodes/how-to-create-an-array-of-unique-values-in-javascript-using-sets-5dg6).
+
 The command used to get the thumbnail from youtube:
 ```
 yt-dlp https://www.youtube.com/watch?v=_qxCYtWm0tw --write-thumbnail

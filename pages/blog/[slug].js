@@ -21,7 +21,7 @@ export default function SlugPage({ frontMatter: {title, category, date, cover_im
                         {category}
                     </CategoryLabel>
                 </div>
-                
+
                 <img src={cover_image} alt="" className="w-full rounded"/>
 
                 <div className="flex justify-between items-center bg-gray-100 p-2 my-8">
@@ -34,7 +34,7 @@ export default function SlugPage({ frontMatter: {title, category, date, cover_im
                     </div>
                 </div>
 
-                <div className="blog-text prose-lg lg:prose-xl mt-2">
+                <div className="markdown-content blog-text prose-lg lg:prose-xl mt-2">
                     <div dangerouslySetInnerHTML={{__html: marked(content)}}></div>
                 </div>
             </div>

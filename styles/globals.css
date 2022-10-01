@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* https://www.youtube.com/watch?v=J0Wy359NJPM */
+/* Note that .markdown-content > a  is only for a elements that are direct children*/
+/* so changed to be any a...  */
+
+@layer components {
+  .markdown-content a {
+    @apply bg-yellow-400 px-4 py-1 rounded-lg hover:bg-yellow-500;
+  }
+}
+
 .youtube-video-container {
   position: relative;
   overflow: hidden;
@@ -31,3 +41,7 @@ blockquote {
   border-left: 5px solid rgb(72, 72, 83);
   max-width: 80%;
 }
+
+/* .markdown-content a {
+  background-color: yellow;
+} */

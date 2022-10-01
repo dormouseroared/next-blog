@@ -108,5 +108,5 @@ This one is about box-sizing: border-box
 
 > Probably better now that the bit of css is in the globals.css
 
-> maybe have another look at Brad putting in some CSS to handle markdown converted to html and anywhere else that does similar...
+> maybe have another look at putting in some CSS to handle markdown converted to html and anywhere else that does similar...
 
