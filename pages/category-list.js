@@ -2,7 +2,7 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import Layout from "@/components/Layout"
-import CategoryList from "@/components/CategoryList"
+import CategoryListGrid from "@/components/CategoryListGrid"
 
 
 
@@ -56,7 +56,7 @@ export default function CategoryListPage(props) {
     return (
         <Layout>
 
-            <CategoryList categories={props.categories}></CategoryList>
+            <CategoryListGrid categories={props.categories}></CategoryListGrid>
 
 
         </Layout>

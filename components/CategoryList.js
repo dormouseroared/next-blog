@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CategoryLabel from './CategoryLabel'
 
 export default function CategoryList({ categories }) {
     return (
@@ -10,7 +11,7 @@ export default function CategoryList({ categories }) {
                 {categories.map((category, index) => (
                     <Link key={index} href={`/blog/category/${category.toLowerCase()}`}>
                         <li className='p-4 cursor-pointer hover:bg-gray-600 hover:text-white'>
-                            {category}
+                            <CategoryLabel>{category}</CategoryLabel> 
                         </li>
                     </Link>
                 ))}
