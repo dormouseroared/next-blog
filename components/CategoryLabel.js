@@ -26,7 +26,7 @@ export default function CategoryLabel({ children }) {
 }
 
 // TODO Brad's code did not work with latest tailwindcss
-// substite the whole class rather than just the colour
+// substitute the whole class rather than just the colour
 // https://stackoverflow.com/questions/68020378/how-to-use-template-literals-in-tailwindcss-to-change-classes-dynamically
 
 // https://tailwindcss.com/docs/content-configuration#class-detection-in-depth
