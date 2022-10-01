@@ -2,7 +2,7 @@
 title: 'only unique values in array'
 date: 'September 29, 2022'
 excerpt: 'How to get only unique values using spread operator and Set'
-cover_image: '/images/posts/Javascript Nuggets - Unique Values (ES6) [Coding Addict][yxT1lgupUrY][5-30][20200816].webp'
+cover_image: '/images/posts/uniquevalues.jpg'
 category: 'JavaScript'
 author: 'Ferdy'
 author_image: 'https://randomuser.me/api/portraits/men/12.jpg'
