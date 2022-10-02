@@ -3,7 +3,7 @@ import Header from './Header'
 
 export default function Layout({title, keywords, description, children}) {
   return (
-    <div>
+    <>
         <Head>
             <title>
                 {title}
@@ -17,10 +17,11 @@ export default function Layout({title, keywords, description, children}) {
         </Head>
 
         <Header />
+        
         <main className="container mx-auto my-7">
             {children}
         </main>
-    </div>
+    </>
   )
 }
 
