@@ -1,28 +1,36 @@
 import Head from 'next/head'
 import Header from './Header'
 
-export default function Layout({title, keywords, description, children}) {
-  return (
-    <>
-        <Head>
-            <title>
-                {title}
-            </title>
+export default function Layout({ title, keywords, description, component, children }) {
+    return (
+        <>
+            <Head>
+                <title>
+                    {title}
+                </title>
 
-            <meta name="keywords" content={keywords}/>
-            <meta name="description" content={description}/>
+                <meta charset="UTF-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <link rel="icon" href="/favicon.ico" />
+                <meta name="keywords" content={keywords} />
+                <meta name="description" content={description} />
 
-        </Head>
+                <link rel="icon" href="/favicon.ico" />
 
-        <Header />
-        
-        <main className="container mx-auto my-7">
-            {children}
-        </main>
-    </>
-  )
+            </Head>
+
+            <Header />
+
+            <main className="container mx-auto my-7">
+                {children}
+            </main>
+
+            <footer>
+                <p className='text-xs italic text-blue-600'>{component}</p>
+            </footer>
+        </>
+    )
 }
 
 Layout.defaultProps = {

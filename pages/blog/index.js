@@ -5,9 +5,9 @@ import matter from "gray-matter"
 import Post from "@/components/Post"
 import { sortByDate } from "@/utils/index"
 
-export default function BlogPage(props) {
+export default function BlogIndexPage(props) {
     return (
-        <Layout>
+        <Layout component="/blog BlogIndexPage">
 
             <h1 className='text-3xl sm:text-5xl border-b-4 p-5 font-bold'>
                 All the Blog posts

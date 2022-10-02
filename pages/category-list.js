@@ -54,7 +54,7 @@ export default function CategoryListPage(props) {
     console.log(JSON.stringify(props.categories, null, 2))
 
     return (
-        <Layout>
+        <Layout component="/category-list CategoryListPage">
 
             <CategoryListGrid categories={props.categories}></CategoryListGrid>
 

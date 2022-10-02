@@ -18,24 +18,24 @@ import { sortByDate } from "@/utils/index"
 // to build the category page.
 
 export async function getStaticPaths() {
-    
+
     const filesArray = fs.readdirSync(path.join("markdown-posts"))
-    
+
     const categoriesArray = filesArray.map((filename) => {
         const markdownWithMeta = fs.readFileSync(path.join("markdown-posts", filename), "utf-8")
-        
+
         const { data: frontMatter } = matter(markdownWithMeta)
-        
+
         return frontMatter.category.toLowerCase()
     })
-    
+
     console.table(categoriesArray)
 
     const uniqueCategoriesArray = [...new Set(categoriesArray)]
 
     console.log("[category_name] [getStaticPaths] uniqueCategories")
     console.table(uniqueCategoriesArray)
-    
+
     const paths = uniqueCategoriesArray.map((category) => ({
         params: { category_name: category }
     }))
@@ -56,7 +56,7 @@ export async function getStaticProps({ params: { category_name } }) {
     console.log("CATEGORY_NAME:", category_name)
 
     const filesArray = fs.readdirSync(path.join("markdown-posts"))
-    
+
     const postsArray = filesArray.map((filename) => {
 
         const slug = filename.replace(".md", "")
@@ -64,7 +64,7 @@ export async function getStaticProps({ params: { category_name } }) {
         const markdownWithMeta = fs.readFileSync(path.join("markdown-posts", filename), "utf-8")
 
         const { data: frontMatter } = matter(markdownWithMeta)
-        
+
         return {
             slug,
             frontMatter
@@ -74,7 +74,7 @@ export async function getStaticProps({ params: { category_name } }) {
     console.log("[category_name] [getStaticProps] postsArray")
     console.table(postsArray)
     // TODO console.table(postsArray, ["frontMatter"]) shows how to select a column, or columns
-    
+
     const filteredPostsArray = postsArray.filter((post) => {
 
         console.log("FILTER", post.frontMatter.category.toLowerCase(), category_name)
@@ -90,7 +90,7 @@ export async function getStaticProps({ params: { category_name } }) {
     console.log("[category_name] [getStaticProps] categories for list")
     console.table(categories)
     const uniqueCategories = [...new Set(categories)]
-    
+
     // end of new code
 
     return {
@@ -134,12 +134,13 @@ export default function CategoryBlogPage(props) {
     console.log(JSON.stringify(props.categories, null, 2))
 
     return (
-        <Layout>
+
+        <Layout component="/blog/category/[category_name] CategoryBlogPage">
 
             <CategoryListGrid categories={props.categories}></CategoryListGrid>
 
             <h1 className='text-3xl sm:text-5xl border-b-4 p-5 font-bold bg-blue-500 text-white m-5 rounded'>
-                Posts for category: {props.categoryName.toUpperCase()}
+                Blogs for category: {props.categoryName.toUpperCase()}
             </h1>
 
 

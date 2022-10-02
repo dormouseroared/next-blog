@@ -8,7 +8,7 @@ import { sortByDate } from "@/utils/index"
 
 export default function HomePage(props) {
   return (
-    <Layout>
+    <Layout component="/ HomePage">
 
       <h1 className='text-5xl border-b-4 p-5 font-bold'>
         Latest Posts

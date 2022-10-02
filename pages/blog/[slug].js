@@ -9,7 +9,7 @@ import CategoryLabel from "@/components/CategoryLabel"
 export default function SlugPage({ frontMatter: {title, category, date, cover_image, author, author_image}, content, slug }) {
 
     return (
-        <Layout title={title}>
+        <Layout title={title} component="/blog/[slug] SlugPage">
             <Link href="/blog">Go Back</Link>
 
             <div className="w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6">
