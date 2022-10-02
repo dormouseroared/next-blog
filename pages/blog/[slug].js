@@ -16,7 +16,7 @@ export default function SlugPage({ frontMatter: { title, category, date, cover_i
 
                 <div className="flex justify-between items-center mt-4 bg-gray-500 text-gray-100 p-5 rounded-lg">
 
-                    <h1 className="text-2xl sm:text-3xl lg:text-4xl">
+                    <h1 className="text-lg sm:text-3xl lg:text-4xl">
                         {title}
                     </h1>
                     <CategoryLabel>
