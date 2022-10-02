@@ -11,7 +11,7 @@ export default function Post({post}) {
 
         <div className="flex justify-between items-center">
 
-            <span className="font-light text-gray-600">
+            <span className="font-sm sm:font-light text-gray-600">
                 {post.frontMatter.date}
             </span>
 
@@ -28,7 +28,7 @@ export default function Post({post}) {
         <div className="mt-2">
 
             <Link href={`/blog/${post.slug}`}>
-                <a className="text-2xl text-gray-700 font-bold hover:underline">
+                <a className="text-2xl text-gray-700 font-bold hover:underline hover:text-gray-900">
                     {post.frontMatter.title}
                 </a>
             </Link>
@@ -39,7 +39,7 @@ export default function Post({post}) {
 
         </div>
 
-        <div className="flex justify-between items-center mt-6">
+        {/* <div className="flex justify-between items-center mt-6">
 
             <Link href={`/blog/${post.slug}`}>
                 <a className="text-gray-900 hover:text-blue-600">
@@ -56,7 +56,7 @@ export default function Post({post}) {
                 </h3>
 
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }
