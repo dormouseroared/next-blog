@@ -1,5 +1,5 @@
 ---
-title: 'only unique values in array'
+title: 'remove duplicates from array'
 date: 'September 29, 2022'
 excerpt: 'How to get only unique values using spread operator and Set'
 cover_image: '/images/posts/uniquevalues.jpg'

@@ -12,7 +12,7 @@ export default function SlugPage({ frontMatter: { title, category, date, cover_i
         <Layout title={title} component="/blog/[slug] SlugPage">
             {/* <Link href="/blog">Go Back</Link> */}
 
-            <div className="w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6">
+            <div className="w-full px-2 sm:px-4 lg:px-10 py-6 bg-white rounded-lg shadow-md mt-6">
 
                 <div className="flex justify-between items-center mt-4 bg-gray-500 text-gray-100 p-5 rounded-lg">
 
