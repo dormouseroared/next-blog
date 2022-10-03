@@ -8,7 +8,7 @@ export default function CategoryLabel({ children }) {
         PHP: "bg-purple-600",
         Ruby: "bg-red-600",
         TailwindCSS: "bg-lime-500",
-        NextJS: "bg-violet-600"
+        NextJS: "bg-rose-600"
     }
 
     
