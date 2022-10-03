@@ -36,12 +36,14 @@ export async function getStaticProps() {
     console.log("[category_name] [getStaticProps] categories for list")
     console.table(categories)
     const uniqueCategories = [...new Set(categories)]
+
+    const sortedCategories = uniqueCategories.sort()
     
     // end of new code
 
     return {
         props: {
-            categories: uniqueCategories
+            categories: sortedCategories
         }
     }
 }

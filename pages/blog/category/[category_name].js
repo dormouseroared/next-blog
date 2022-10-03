@@ -91,13 +91,15 @@ export async function getStaticProps({ params: { category_name } }) {
     console.table(categories)
     const uniqueCategories = [...new Set(categories)]
 
+    const sortedCategories = uniqueCategories.sort()
+
     // end of new code
 
     return {
         props: {
             posts: filteredPostsArray.sort(sortByDate),
             categoryName: category_name,
-            categories: uniqueCategories
+            categories: sortedCategories
         }
     }
 }
