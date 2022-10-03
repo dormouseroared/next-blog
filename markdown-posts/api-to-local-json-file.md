@@ -1,5 +1,5 @@
 ---
-title: 'using the next.js'
+title: 'using the next.js api'
 date: 'October 3, 2022'
 excerpt: 'Using the next api with a local json file'
 cover_image: '/images/posts/next-api.png'
