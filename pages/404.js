@@ -1,12 +1,13 @@
 import Image from "next/image"
 import Layout from "@/components/Layout"
+import {MdCode} from "react-icons/md"
 
 export default function NotFoundPage() {
   return (
     <Layout title="Page not found">
         <div className="flex flex-col items-center mt-20">
-            <Image src="/images/logo.png" width={70} height={70} className="bg-gray-800 rounded-2xl"  alt=""/>
-
+            {/* <Image src="/images/logo.png" width={70} height={70} className="bg-gray-800 rounded-2xl"  alt=""/> */}
+            <MdCode size="4rem"/>
             <h1 className="text-6xl my-5">
                 Whoops!
             </h1>
