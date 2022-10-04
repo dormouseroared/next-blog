@@ -2,7 +2,7 @@
 title: 'access coins api with next.js'
 date: 'October 3, 2022'
 excerpt: 'Display data from coins api using axios with next.js'
-cover_image: '/images/posts/NextJS Course For Beginners.jpg'
+cover_image: '/images/posts/NextJS-Course-For-Beginners.jpg'
 category: 'NextJS'
 ---
 
