@@ -33,7 +33,32 @@ export async function getStaticProps() {
 
         const markdownWithMeta = fs.readFileSync(path.join("markdown-posts", filename), "utf-8")
 
+
+        // 
+        //  when BLOG is clicked these checks are made to highlight errors
+        // that cause strange indecipherable messages in places like CategoryLabel
+        // because a markdown file does not have the --- delimiters
+        // There can still be other problems with markdown files that cause weird errors.
+        //
+        console.log("typeof markdownWithMeta", typeof markdownWithMeta)
+        console.log("blog is reading files one by one", filename, markdownWithMeta[0])
+
+        const check1 = markdownWithMeta.substring(0, 3)
+        if (check1 !== "---") {
+            throw `blog index error: blog ${filename} does not start with ---`
+        }
+
+        if (markdownWithMeta.substring(3).indexOf("---") === -1) {
+            throw `blog index error: blog ${filename} does not have second ---`
+        }
+
+        //
+        // end of blog check
+        //
+
         const { data: frontMatter } = matter(markdownWithMeta)
+
+        console.log("index.js in blog has a category of:", frontMatter.category)
 
         return {
             slug,

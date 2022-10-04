@@ -6,6 +6,7 @@ cover_image: '/images/posts/img7.jpg'
 category: 'JavaScript'
 author: 'John Doe'
 author_image: 'https://randomuser.me/api/portraits/men/11.jpg'
+draft: true
 ---
 
 <!-- Markdow generator - https://jaspervdj.be/lorem-markdownum/ -->
