@@ -32,6 +32,11 @@ export default function Header() {
                             About
                         </a>
                     </Link>
+                    <Link href="/test">
+                        <a className="mx-5 cursor-pointer uppercase hover:text-indigo-300">
+                            Test
+                        </a>
+                    </Link>
                 </nav>
             </div>
         </header>
