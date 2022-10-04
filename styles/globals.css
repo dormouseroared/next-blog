@@ -8,7 +8,10 @@
 
 @layer components {
   .markdown-content a {
-    @apply bg-yellow-400 px-4 py-1 rounded-lg hover:bg-yellow-500;
+    @apply bg-yellow-400 px-4 py-1 text-black rounded-lg hover:bg-yellow-500;
+  }
+  .globalStyling a {
+    @apply text-blue-500 underline hover:text-blue-700;
   }
 }
 
