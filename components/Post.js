@@ -6,7 +6,7 @@ import CategoryLabel from "@components/CategoryLabel"
 export default function Post({post}) {
   return (
 
-    <div className="w-full p-6 bg-gray-200 rounded-lg shadow-lg mt-6">
+    <div className="w-full p-6 bg-gray-200 rounded-lg shadow-lg">
 
         <Image src={post.frontMatter.cover_image} alt="" height={420} width={600} className="mb-4 rounded" />
 

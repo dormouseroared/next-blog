@@ -11,8 +11,8 @@ export default function HomePage(props) {
   return (
     <Layout component="/ HomePage">
 
-      <h1 className='text-5xl border-b-4 p-5 font-bold'>
-        Latest Blogs
+      <h1 className='text-3xl sm:text-5xl border-b-4 py-5 font-bold mb-6'>
+        Latest Blog Posts
       </h1>
 
 

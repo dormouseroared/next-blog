@@ -10,8 +10,8 @@ export default function BlogIndexPage(props) {
     return (
         <Layout component="/blog BlogIndexPage">
 
-            <h1 className='text-3xl sm:text-5xl border-b-4 p-5 font-bold'>
-                All the Blog posts
+            <h1 className='text-3xl sm:text-5xl border-b-4 py-5 font-bold mb-6'>
+                All Blog Posts
             </h1>
 
 
