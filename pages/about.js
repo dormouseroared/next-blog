@@ -8,7 +8,7 @@ import {MdCode} from "react-icons/md"
 export default function AboutPage() {
     return (
         <Layout title="About Journal" component="/about AboutPage">
-            <h1 className="text-5xl border-b-4 pb-5 font-bold">
+            <h1 className="text-3xl sm:text-5xl border-b-4 py-5 font-bold mb-6">
                 About
             </h1>
             <div className="shadow-md rounded-lg py-6 mt-6">
