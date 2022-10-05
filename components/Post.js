@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import CategoryLabel from "@/components/CategoryLabel"
+
+import CategoryLabel from "@components/CategoryLabel"
 
 export default function Post({post}) {
   return (

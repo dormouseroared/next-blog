@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Layout from "@/components/Layout"
+import Layout from "@components/Layout"
 import {MdCode} from "react-icons/md"
 
 export default function NotFoundPage() {

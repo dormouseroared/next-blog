@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import CategoryLabel from './CategoryLabel'
+import CategoryLabel from '@components/CategoryLabel'
 
 export default function CategoryList({ categories }) {
   return (

@@ -1,9 +1,10 @@
 import fs from "fs"
 import path from "path"
-import Layout from "@/components/Layout"
 import matter from "gray-matter"
-import Post from "@/components/Post"
-import { sortByDate } from "@/utils/index"
+
+import Layout from "@components/Layout"
+import Post from "@components/Post"
+import { sortByDate } from "@utils/index"
 
 export default function BlogIndexPage(props) {
     return (

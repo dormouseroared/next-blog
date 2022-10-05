@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout"
+import Layout from "@components/Layout"
 import {FaHome, FaEnvelope} from "react-icons/fa"
 import {BsFillFileRuledFill} from "react-icons/bs"
 import {AiOutlineNotification} from "react-icons/ai"

@@ -1,8 +1,9 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import Layout from "@/components/Layout"
-import CategoryListGrid from "@/components/CategoryListGrid"
+
+import Layout from "@components/Layout"
+import CategoryListGrid from "@components/CategoryListGrid"
 
 
 
