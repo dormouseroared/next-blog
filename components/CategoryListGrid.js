@@ -5,7 +5,7 @@ export default function CategoryList({ categories }) {
   return (
     <div className='w-full mt-6'>
 
-      <h3 className='text-3xl bg-slate-700 text-slate-100 p-3'>
+      <h3 className='text-3xl sm:text-5xl border-b-4 py-5 font-bold mb-6'>
         Categories available
       </h3>
 
