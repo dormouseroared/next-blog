@@ -142,8 +142,8 @@ export default function CategoryBlogPage(props) {
 
             <CategoryListGrid categories={props.categories}></CategoryListGrid>
 
-            <h1 className='text-3xl sm:text-5xl p-5 font-bold bg-slate-600 text-white rounded-lg my-5'>
-                Blogs for category: {props.categoryName.toUpperCase()}
+            <h1 className='text-3xl sm:text-5xl border-b-4 py-5 font-bold my-6 text-white'>
+                Blog Posts for Category: {props.categoryName.toUpperCase()}
             </h1>
 
 
