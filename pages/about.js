@@ -1,6 +1,5 @@
 import Layout from "@components/Layout"
 
-
 export default function AboutPage() {
     return (
         <>
@@ -28,22 +27,7 @@ export default function AboutPage() {
 
                    
 
-                    <h2 className="text-3xl my-6">button</h2>
-
-                    <button className="btn btn-active">Button</button>
-                    <button className="btn btn-active btn-primary">Button</button>
-                    <button className="btn btn-active btn-secondary">Button</button>
-                    <button className="btn btn-active btn-accent">Button</button>
-                    <button className="btn btn-active btn-ghost">Button</button>
-                    <button className="btn btn-active btn-link">Button</button>
-
-
-                    <h2 className="text-3xl my-6">kbd</h2>
-                    <kbd className="kbd">ctrl</kbd>
-                    +
-                    <kbd className="kbd">shift</kbd>
-                    +
-                    <kbd className="kbd">del</kbd>
+                
 
 
                     
@@ -54,11 +38,8 @@ export default function AboutPage() {
                 </div>
             </Layout>
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> daisyui-1
         </>
     )
 }
