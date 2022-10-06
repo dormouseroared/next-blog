@@ -3,44 +3,48 @@ import Link from "next/link"
 
 import CategoryLabel from "@components/CategoryLabel"
 
-export default function Post({post}) {
-  return (
+export default function Post({ post }) {
+    return (
 
-    <div className="w-full p-6 bg-gray-200 rounded-lg shadow-lg">
+        <div className="w-full p-6 bg-gray-200 rounded-lg">
 
-        <Image src={post.frontMatter.cover_image} alt="" height={420} width={600} className="mb-4 rounded" />
+            <div className="pb-8 capitalize">
+                <Link href={`/blog/${post.slug}`}>
+                    <a className="text-2xl sm:text-3xl text-purple-900 py-2 px-4 font-bold hover:text-purple-700">
+                        {post.frontMatter.title}
+                    </a>
+                </Link>
+            </div>
 
-        <div className="flex justify-between items-center">
+            <Image src={post.frontMatter.cover_image} alt="" height={420} width={600} className="my-6 rounded" />
 
-            <span className="font-sm sm:font-light text-gray-600">
-                {post.frontMatter.date}
-            </span>
 
-            <span className="text-xs italic">
-                {post.slug}
-            </span>
+            <div className="flex justify-between items-center">
 
-            <CategoryLabel>
-                {post.frontMatter.category}
-            </CategoryLabel>
+                <span className="font-sm sm:font-light text-gray-600">
+                    {post.frontMatter.date}
+                </span>
 
-        </div>
+                <span className="text-xs italic">
+                    {post.slug}
+                </span>
 
-        <div className="mt-2">
+                <CategoryLabel>
+                    {post.frontMatter.category}
+                </CategoryLabel>
 
-            <Link href={`/blog/${post.slug}`}>
-                <a className="text-2xl text-gray-700 font-bold hover:underline hover:text-gray-900">
-                    {post.frontMatter.title}
-                </a>
-            </Link>
+            </div>
 
-            <p className="mt-2 text-gray-600">
-                {post.frontMatter.excerpt}
-            </p>
+            <div className="mt-2">
 
-        </div>
 
-        {/* <div className="flex justify-between items-center mt-6">
+                <p className="mt-2 text-gray-600">
+                    {post.frontMatter.excerpt}
+                </p>
+
+            </div>
+
+            {/* <div className="flex justify-between items-center mt-6">
 
             <Link href={`/blog/${post.slug}`}>
                 <a className="text-gray-900 hover:text-blue-600">
@@ -58,6 +62,6 @@ export default function Post({post}) {
 
             </div>
         </div> */}
-    </div>
-  )
+        </div>
+    )
 }
