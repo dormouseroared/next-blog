@@ -60,7 +60,25 @@ export default function AboutPage() {
                         <h2 className="ml-6">Material Design Icons.</h2>
                     </div>
 
+                    <h2 className="text-3xl my-6">button</h2>
 
+                    <button className="btn btn-active">Button</button>
+                    <button className="btn btn-active btn-primary">Button</button>
+                    <button className="btn btn-active btn-secondary">Button</button>
+                    <button className="btn btn-active btn-accent">Button</button>
+                    <button className="btn btn-active btn-ghost">Button</button>
+                    <button className="btn btn-active btn-link">Button</button>
+
+
+                    <h2 className="text-3xl my-6">kbd</h2>
+                    <kbd className="kbd">ctrl</kbd>
+                    +
+                    <kbd className="kbd">shift</kbd>
+                    +
+                    <kbd className="kbd">del</kbd>
+
+
+                    
                     <p className="mt-5">
                         <span className="font-bold">Version 1.0.0</span>
                     </p>
@@ -70,20 +88,6 @@ export default function AboutPage() {
 
 
 
-            <h2 className="text-3xl my-6">button</h2>
-
-            <button className="btn btn-active">Button</button>
-            <button className="btn btn-active btn-primary">Button</button>
-            <button className="btn btn-active btn-secondary">Button</button>
-            <button className="btn btn-active btn-accent">Button</button>
-            <button className="btn btn-active btn-ghost">Button</button>
-            <button className="btn btn-active btn-link">Button</button>
-            <h2 className="text-3xl my-6">kbd</h2>
-            <kbd className="kbd">ctrl</kbd>
-            +
-            <kbd className="kbd">shift</kbd>
-            +
-            <kbd className="kbd">del</kbd>
         </>
     )
 }
