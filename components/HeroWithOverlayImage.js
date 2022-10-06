@@ -10,7 +10,7 @@ export default function HeroWithOverlayImage({title, image, button, children}) {
                         <p className="mb-5">
                             {children}
                         </p>
-                        <button className="btn btn-primary"><a href="#about">{button}</a></button>
+                        <button className="btn btn-primary"><a href="#start">{button}</a></button>
                     </div>
                 </div>
             </div>
