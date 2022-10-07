@@ -8,14 +8,18 @@ import { GiOverInfinity } from "react-icons/gi"
 import { MdCode } from "react-icons/md"
 
 export default function TestPage() {
+
+    const image1 = "https://placeimg.com/1000/800/arch"
+    const image2 = "/images/posts/img7.jpg"
+
     return (
         <>
-            <HeroWithOverlayImage title="DaisyUI Hero Component" image="https://placeimg.com/1000/800/arch" button="GET STARTED">
+            <HeroWithOverlayImage title="DaisyUI Hero Component" image={image2} button="GET STARTED">
                 Starting with the JSX code from DaisyUI, this is a component called HeroWithOverlayImage, which can wrap any plain text to be placed on the supplied image as an overlay, and take in a title. Experimenting with using the button to jump to #start, so an id needs to be in the code somewhere (and there need to be enough on the page!). Also need to check out the image being a url or local. This hero is placed outside the Layout component to get full width.
             </HeroWithOverlayImage>
 
             <Layout>
-                <div id="start" className="globalStyling">
+                <div className="globalStyling">
                     <h1 className="text-3xl">Testing Zone</h1>
                     <p>Rather than clutter up the navbar with links, tests can be placed here.</p>
 
