@@ -24,9 +24,11 @@ export default function Layout({ title, keywords, description, component, childr
                 {children}
             </main>
 
-            <footer>
-                <p className='text-xs italic text-blue-600 ml-3'>{component}</p>
-            </footer>
+            {/* <footer>
+                <p className='text-xs italic text-blue-600 ml-3'>
+                    {component}
+                </p>
+            </footer> */}
         </>
     )
 }
