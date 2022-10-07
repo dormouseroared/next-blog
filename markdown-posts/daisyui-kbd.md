@@ -1,7 +1,7 @@
 ---
 title: 'DaisyUI kbd'
 date: 'October 5, 2022'
-excerpt: 'Try out some daisyUI with the kbd component'
+excerpt: 'Try out some daisyUI in markdown'
 cover_image: '/images/posts/daisyUI-kbd.png'
 category: 'NextJS'
 ---

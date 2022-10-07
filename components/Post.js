@@ -10,7 +10,7 @@ export default function Post({ post }) {
 
             <div className="pb-8 capitalize">
                 <Link href={`/blog/${post.slug}`}>
-                    <a className="text-2xl block sm:text-3xl text-white py-3 px-4 bg-purple-700 rounded hover:underline underline-offset-8 decoration-4 font-mono">
+                    <a className="text-xl block sm:text-2xl text-white py-3 px-2 bg-purple-700 rounded hover:underline underline-offset-8 decoration-4 font-mono">
                         {post.frontMatter.title}
                     </a>
                 </Link>

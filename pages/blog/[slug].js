@@ -13,11 +13,11 @@ export default function SlugPage({ frontMatter: { title, category, date, cover_i
         <Layout title={title} component="/blog/[slug] SlugPage">
             {/* <Link href="/blog">Go Back</Link> */}
 
-            <div className="w-full px-2 sm:px-4 lg:px-10 py-6 bg-whitex rounded-lgx shadow-mdx mt-6">
+            <div className="w-full px-2 sm:px-4 lg:px-10 max-w-5xl mx-auto">
 
-                <div className="flex justify-between items-center mt-4 bg-gray-500 text-gray-100 p-5 rounded-lg">
+                <div className="flex justify-between items-center mt-4 bg-purple-700 text-gray-100 py-3 px-4 rounded-lg">
 
-                    <h1 className="text-lg sm:text-3xl lg:text-4xl capitalize">
+                    <h1 className="text-lg sm:text-3xl lg:text-4xl capitalize font-mono">
                         {title}
                     </h1>
                     <CategoryLabel>
@@ -26,11 +26,16 @@ export default function SlugPage({ frontMatter: { title, category, date, cover_i
 
                 </div>
 
-                <div className="flex justify-between items-center bg-gray-500 text-gray-100 p-5 rounded-lg mt-1 mb-6 text-xs lg:text-2xl">
-                    <h3>{excerpt}</h3>
-                    <div className="">
+                <div className="flex justify-between items-center bg-purple-400 text-gray-100 py-2 pl-4 pr-2 sm:px-4 rounded-lg mt-2 text-xs sm:text-xl">
+
+                    <p className="font-bold">
+                        {excerpt}
+                    </p>
+
+                    <div className="tracking-tight bg-gray-500 text-gray-200 rounded p-1 sm:px-4">
                         {date}
                     </div>
+
                 </div>
 
 
