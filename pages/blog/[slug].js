@@ -48,7 +48,7 @@ export default function SlugPage({ frontMatter: { title, category, date, cover_i
                     </div>
                 </div> */}
 
-                <div className="markdown-content blog-text prose-lg lg:prose-xl mt-2">
+                <div className="markdown-content blog-text prose-lg lg:prose-xl mt-2 pb-4">
                     <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
                 </div>
             </div>
