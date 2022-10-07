@@ -2,7 +2,6 @@ import fs from "fs"
 import path from "path"
 import { marked } from "marked"
 import matter from "gray-matter"
-import Link from "next/link"
 
 import Layout from "@components/Layout"
 import CategoryLabel from "@components/CategoryLabel"
@@ -13,7 +12,7 @@ export default function SlugPage({ frontMatter: { title, category, date, cover_i
         <Layout title={title} component="/blog/[slug] SlugPage">
             {/* <Link href="/blog">Go Back</Link> */}
 
-            <div className="w-full px-2 sm:px-4 lg:px-10 max-w-5xl mx-auto">
+            <div className="w-full px-2 sm:px-4 lg:px-10 max-w-5xl mx-auto bg-slate-700">
 
                 <div className="flex justify-between items-center mt-4 bg-purple-700 text-gray-100 py-3 px-4 rounded-lg">
 
