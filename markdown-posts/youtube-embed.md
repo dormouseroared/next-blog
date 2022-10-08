@@ -110,3 +110,16 @@ This one is about box-sizing: border-box
 
 > maybe have another look at putting in some CSS to handle markdown converted to html and anywhere else that does similar...
 
+# more on this from the tailwind site
+
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/7PIKm95bSB8"></iframe>
+
+# and another one
+
+* [Tailwind v3: Video Aspect Ratio](https://codepen.io/chris__sev/pen/bGowYaN/)
+
+<div class="min-h-screen flex items-center justify-center p-10 bg-yellow-400">
+
+  <iframe class="aspect-video w-full rounded-lg shadow-lg shadow-yellow-800/70" src="https://www.youtube-nocookie.com/embed/7PIKm95bSB8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>

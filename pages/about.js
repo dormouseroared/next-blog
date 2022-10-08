@@ -22,6 +22,7 @@ export default function AboutPage() {
                         <li>Markdown</li>
                         <li>gray-matter</li>
                         <li>marked</li>
+                        <li><a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://www.npmjs.com/package/axios">axios</a></li>
                         <li><a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://react-icons.github.io/react-icons/">react-icons</a></li>
                     </ul>
 
