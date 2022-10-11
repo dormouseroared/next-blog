@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 
-export default function AnotherButton() {
+export default function WidthHeightButton() {
 
 
     const [widthParam, setWidth] = useState(55)
@@ -14,28 +14,31 @@ export default function AnotherButton() {
     function handleClick() {
         console.log("[AnotherButton] width x height:", window.innerWidth, "x", window.innerHeight)
 
-        setWidth(window.innerWidth)
-        setHeight(window.innerHeight)
-    
-        console.log("typeof widthParam:", typeof widthParam, widthParam)
-
         let breakpoint = ""
+        const currentWidth = window.innerWidth
 
-        if (widthParam >= 1536) {
+        if (currentWidth >= 1536) {
             breakpoint = "2xl"
-        } else if (widthParam >= 1280) {
+        } else if (currentWidth >= 1280) {
             breakpoint = "xl"
-        } else if (widthParam >= 1024) {
+        } else if (currentWidth >= 1024) {
             breakpoint ="lg"
-        } else if (widthParam >= 768) {
+        } else if (currentWidth >= 768) {
             breakpoint = "md"
-        } else if (widthParam >= 640) {
+        } else if (currentWidth >= 640) {
             breakpoint = "sm"
         } else {
             breakpoint = "default"
         }
-
+        setWidth(window.innerWidth)
+        setHeight(window.innerHeight)
         setTailwindBreakpoint(breakpoint)
+    
+        console.log("typeof widthParam:", typeof widthParam, widthParam)
+
+        
+
+
 
     }
     
