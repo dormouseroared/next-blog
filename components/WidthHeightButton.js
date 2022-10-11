@@ -9,7 +9,7 @@ export default function AnotherButton() {
     const [heightParam, setHeight] = useState(55)
     const [tailwindBreakpoint, setTailwindBreakpoint] = useState("empty")
 
-    console.log("[AnotherButton] check array used to destructure setWidth function:", typeof setWidth)
+    console.log("[AnotherButton] check array used to destructure setWidth is a function:", typeof setWidth)
 
     function handleClick() {
         console.log("[AnotherButton] width x height:", window.innerWidth, "x", window.innerHeight)
