@@ -1,6 +1,10 @@
 import Layout from "@components/Layout"
+import Counter from "@components/Counter"
+import AnotherButton from "@components/AnotherButton"
+import FetchPokemon from "@components/FetchPokemon"
 
 export default function AboutPage() {
+
     return (
         <>
 
@@ -35,6 +39,18 @@ export default function AboutPage() {
                     <p className="mt-5">
                         <span className="font-bold">Version 1.0.0</span>
                     </p>
+
+                    
+                   
+
+                    <hr />
+                    <Counter />
+
+                    <AnotherButton />
+
+                    <FetchPokemon />
+
+
 
                 </div>
             </Layout>
