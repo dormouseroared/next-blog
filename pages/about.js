@@ -2,8 +2,17 @@ import Layout from "@components/Layout"
 import Counter from "@components/Counter"
 import WidthHeightButton from "@components/WidthHeightButton"
 import FetchPokemon from "@components/FetchPokemon"
+import SimpleRender from "@components/SimpleRender"
+import CounterWithError from "@components/CounterWithError"
+import ResourceType from "@components/ResourceType"
+import ExpenseItem from "@components/EXPENSE/ExpenseItem"
+import Expenses from "@components/EXPENSE/Expenses"
+import DoubleCount from "@components/doubleCount"
 
 export default function AboutPage() {
+
+    
+
 
     return (
         <>
@@ -30,31 +39,42 @@ export default function AboutPage() {
                         <li><a className="text-blue-600 underline hover:text-blue-800 visited:text-purple-600" href="https://react-icons.github.io/react-icons/">react-icons</a></li>
                     </ul>
 
-                   
-
-                
 
 
-                    
+
+
+
+
                     <p className="mt-5">
                         <span className="font-bold">Version 1.0.0</span>
                     </p>
 
-                    
-                   
+
+
 
                     <hr />
-                    <Counter />
+                    {/* <Counter />
+
+                    <SimpleRender />
 
                     <WidthHeightButton />
 
                     <FetchPokemon />
+
+                    <CounterWithError />
+
+                    <ResourceType />
+
+                    <Expenses /> */}
+
+                    
 
 
 
                 </div>
             </Layout>
 
+                    <DoubleCount />
 
 
         </>
